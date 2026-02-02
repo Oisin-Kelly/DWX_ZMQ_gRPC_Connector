@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+option csharp_namespace = "DWX_ZMQ_gRPC_Connector";
+
+package marketdata;
+
+import "google/protobuf/timestamp.proto";
+
+service MarketDataService {
+  rpc SubscribeMarketData (SubscribeRequest) returns (stream SubscribeResponse);
+  
+  rpc UnsubscribeMarketData (UnsubscribeRequest) returns (UnsubscribeResponse);
+}
+
+message SubscribeRequest {
+  // list of symbols to subscribe to e.g., ["AAPL", "GOOG"]
+  repeated string symbols = 1;
+}
+
+message SubscribeResponse {
+  oneof response {
+    SubscriptionStatus status = 1;
+    MarketTick tick = 2;
+  }
+}
+
+message SubscriptionStatus {
+  repeated string successful_symbols = 1;
+  repeated string failed_symbols = 2;
+  string message = 3;
+}
+
+message UnsubscribeRequest {
+  // list of symbols to unsubscribe from
+  repeated string symbols = 1;
+}
+
+message UnsubscribeResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message MarketTick {
+  string symbol = 1;
+  double bid = 2;
+  double ask = 3;
+  google.protobuf.Timestamp timestamp = 4;
+}

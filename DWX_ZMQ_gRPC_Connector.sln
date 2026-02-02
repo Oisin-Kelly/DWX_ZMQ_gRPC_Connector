@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DWX_ZMQ_gRPC_Connector", "DWX_ZMQ_gRPC_Connector\DWX_ZMQ_gRPC_Connector.csproj", "{EC5BE3B3-CE2D-4952-B711-45383EB31F8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketData_gRPC_Client", "MarketData_gRPC_Client\MarketData_gRPC_Client.csproj", "{86AA9C0B-E924-4111-B8CF-0F1DF1963D02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC5BE3B3-CE2D-4952-B711-45383EB31F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC5BE3B3-CE2D-4952-B711-45383EB31F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC5BE3B3-CE2D-4952-B711-45383EB31F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC5BE3B3-CE2D-4952-B711-45383EB31F8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86AA9C0B-E924-4111-B8CF-0F1DF1963D02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86AA9C0B-E924-4111-B8CF-0F1DF1963D02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86AA9C0B-E924-4111-B8CF-0F1DF1963D02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86AA9C0B-E924-4111-B8CF-0F1DF1963D02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
