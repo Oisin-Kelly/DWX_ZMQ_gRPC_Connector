@@ -1,5 +1,7 @@
 # DWX ZeroMQ gRPC Connector
 
+https://github.com/user-attachments/assets/fa2634e5-6b7d-4df0-a928-1ae4300ad9d2
+
 A gRPC server to connect with the [DWX ZeroMQ Connector EA](https://github.com/darwinex/dwx-zeromq-connector) using ZeroMQ.
 
 ## Requirements
